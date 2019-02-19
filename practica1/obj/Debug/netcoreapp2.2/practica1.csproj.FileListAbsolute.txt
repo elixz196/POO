@@ -1,0 +1,11 @@
+C:\Users\elixz\Documents\POO\practica1\bin\Debug\netcoreapp2.2\practica1.deps.json
+C:\Users\elixz\Documents\POO\practica1\bin\Debug\netcoreapp2.2\practica1.runtimeconfig.json
+C:\Users\elixz\Documents\POO\practica1\bin\Debug\netcoreapp2.2\practica1.runtimeconfig.dev.json
+C:\Users\elixz\Documents\POO\practica1\bin\Debug\netcoreapp2.2\practica1.dll
+C:\Users\elixz\Documents\POO\practica1\bin\Debug\netcoreapp2.2\practica1.pdb
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.csprojAssemblyReference.cache
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.csproj.CoreCompileInputs.cache
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.AssemblyInfoInputs.cache
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.AssemblyInfo.cs
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.dll
+C:\Users\elixz\Documents\POO\practica1\obj\Debug\netcoreapp2.2\practica1.pdb
