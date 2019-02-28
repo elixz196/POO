@@ -6,24 +6,28 @@ namespace Dados
     {
         //Atributos 
         private int valor;
-        private string color;
+        
 
         //Constructor
-        public Dado(int valor, string color)
+        public Dado(int valor)
         {
             this.valor=valor;
-            this.color=color;
+            
         }
+
+        
 
         //metodo
+        public static Dado operator + (Dado d, Dado d2)
+        {
+            Dado result = new Dado(d.valor+d2.valor);
+            return result;
+        }
+       
+        
         public void imprime()
         {
-            Console.WriteLine("El mejor dado es: {0},{1}", valor, color);
-        }
-
-        public static Dado operator < (Dado d, Dado d2 )
-        {
-            
+            Console.WriteLine("La suma es : {0}", valor);
         }
 
     }
@@ -33,12 +37,17 @@ namespace Dados
         {
             Random rnd = new Random();
 
-            Dado d1 = new Dado(rnd.Next(1,6),"verde");
-            Dado d2 = new Dado(rnd.Next(1,6),"Rojo");
-            Dado d3 = new Dado(rnd.Next(1,6,"Rojo");
+            Dado d1 = new Dado(rnd.Next(1,6));
+            Dado d2 = new Dado(rnd.Next(1,6));
+            Dado d3 = new Dado(rnd.Next(1,6));
+
+           
+           Dado d = d1+d2;
+
             d1.imprime();
-            d2.imprime();
             d3.imprime();
+            d.imprime();
+           
         }
     }
 }

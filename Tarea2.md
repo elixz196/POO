@@ -120,6 +120,96 @@ Basicamente hace lo contrario a un constructor, cuando un objeto es destruido, l
 
     o si alguno es igual.
 
-    
+# Programa:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace dados
+{
+    class Dado
+    {
+        //Atributos 
+        private int valor;
+        private string color;
+        private int v;
 
 
+        //Constructor
+        public Dado(int valor, string color)
+        {
+            this.valor = valor;
+            this.color = color;
+
+        }
+
+        public Dado(int v)
+        {
+            this.v = v;
+        }
+
+
+
+        //metodo
+        public static bool operator < (Dado d, Dado d2)
+        {
+            return (d.valor.CompareTo(d2.valor) < 0);
+        }
+        public static bool operator >(Dado d, Dado d2)
+        {
+            return (d.valor.CompareTo(d2.valor) > 0);
+        }
+        public static bool operator == (Dado d, Dado d2)
+        {
+            return (d.valor.CompareTo(d2.valor) == 0);
+        }
+        public static bool operator !=(Dado d, Dado d2)
+        {
+            return (d.valor.CompareTo(d2.valor) != 0);
+        }
+
+
+        public void imprime()
+        {
+            Console.WriteLine("El mejor dado es : {0}, {1}",valor, color);
+            Console.ReadLine();
+        }
+
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+
+            Dado d1 = new Dado(rnd.Next(1, 6), "verde");
+            Dado d2 = new Dado(rnd.Next(1, 6),"morado");
+            Dado d3 = new Dado(rnd.Next(1, 6),"rosa");
+
+           if (d1 < d2 && d3<d2)
+            {
+                d2.imprime();
+            }
+            else if(d1>d2 && d1>d3)
+            {
+                d1.imprime();
+            }
+            else if(d3>d1 &&d3>d2)
+            {
+                d3.imprime();
+            }
+
+            d1.imprime();
+            d2.imprime();
+            d3.imprime();
+            
+        }
+    }
+}
+
+
+=============================================================================
